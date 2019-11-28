@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    align-content: center;
+    background-color: #222;
+    border-color: #080808;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 999999999999999999999999999999999999999999999999999;
+}
+
+.header_nombre_div {
+    flex: 0 0 60%;
+    justify-content: center;
+}
+
+.header_nombre_div {
+    padding-left: 5%
+}
+
+.header_login_div {
+    flex: 0 0 40%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 120%;
+    display: flex;
+    color: white;
+    display: flex;
+}
+
+.user_login_img {
+    width: 30px;
+    height: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    background: url('/img/sociedad2.jpg') no-repeat 50% 50%;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 0px 0px 300px #000;
+    font-size: 800%;
+    font-weight: bold;
+    color: black;
+}
+
+.registrarse {
+    border-radius: 9px;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 135%;
+    padding: 10px 20px;
+    border: solid black 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: gray;
+    opacity: 0.9;
+}
+
+.registrarse:hover {
+    color: #fff;
+    border: solid #fff 3px;
+}
+
+.text_container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.text_container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.text_container2 p {
+    flex: 0 0 30%;
+    margin-left: 30px;
+}
+
+.cuadrados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3%;
+}
+
+.cuadrados div {
+    flex: 0 0 10%;
+}
+
+.cuadrados div:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cuadrados div img {
+    width: 100%;
+    height: auto;
+}
+
+.div_pantallazo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(196, 196, 196);
+}
+
+.formulario {
+    width: 50%;
+    margin-left: 30%;
+    margin-bottom: 3%;
+}
+
+.formulario h3 {
+    text-align: center;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: #222;
+    justify-content: center;
+}
+
+.footer div {
+    flex: 0 0 30%;
+}
+
+@media screen and (max-width:786px) {
+    .content h1 {
+        font-size: 250%;
+    }
+    .registrarse {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+    .text_container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cuadrados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        padding-left: 20%;
+        margin: auto;
+    }
+    .cuadrados div img {
+        width: 30%;
+        height: auto;
+    }
+    .footer {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        background-color: #222;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer div {
+        flex: 0 0 100%;
+    }
+}
